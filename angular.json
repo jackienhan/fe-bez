@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "bezkoder"
+    }
+  },
+  "defaultProject": "bezkoder",
+  "cli": {
+    "analytics": "d7fdd970-1ebf-4abd-9c12-a0daaeb9daff"
+  }
 }
