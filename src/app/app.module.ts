@@ -14,6 +14,10 @@ import {HttpClientModule} from '@angular/common/http';
 import {AppRoutingModule} from './app-routing/app-routing.module';
 import {authInterceptorProviders} from './_helpers/auth-interceptor.interceptor';
 import { UploadFilesComponent } from './upload-files/upload-files.component';
+import { TutorialsListComponent } from './tutorials-list/tutorials-list.component';
+import { AddTutorialComponent } from './add-tutorial/add-tutorial.component';
+import { TutorialDetailsComponent } from './tutorial-details/tutorial-details.component';
+import {NgxPaginationModule} from 'ngx-pagination';
 
 @NgModule({
   declarations: [
@@ -25,12 +29,16 @@ import { UploadFilesComponent } from './upload-files/upload-files.component';
     BoardAdminComponent,
     BoardModeratorComponent,
     BoardUserComponent,
-    UploadFilesComponent
+    UploadFilesComponent,
+    TutorialsListComponent,
+    AddTutorialComponent,
+    TutorialDetailsComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     ReactiveFormsModule,
+    NgxPaginationModule,
     HttpClientModule,
     AppRoutingModule,
   ],

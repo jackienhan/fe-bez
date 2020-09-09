@@ -9,6 +9,9 @@ import {BoardModeratorComponent} from '../board-moderator/board-moderator.compon
 import {BoardAdminComponent} from '../board-admin/board-admin.component';
 import {LoginComponent} from '../login/login.component';
 import {UploadFilesComponent} from '../upload-files/upload-files.component';
+import {TutorialsListComponent} from '../tutorials-list/tutorials-list.component';
+import {AddTutorialComponent} from '../add-tutorial/add-tutorial.component';
+import {TutorialDetailsComponent} from '../tutorial-details/tutorial-details.component';
 
 const routes: Routes = [
   { path: 'home', component: HomeComponent },
@@ -19,6 +22,9 @@ const routes: Routes = [
   { path: 'mod', component: BoardModeratorComponent },
   { path: 'admin', component: BoardAdminComponent },
   { path: 'files', component: UploadFilesComponent},
+  { path: 'tutorials', component: TutorialsListComponent },
+  { path: 'tutorials/:id', component: TutorialDetailsComponent },
+  { path: 'add', component: AddTutorialComponent },
   { path: '', redirectTo: 'home', pathMatch: 'full' }
 ];
 
